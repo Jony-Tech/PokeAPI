@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+h1{
+    padding: 20px;
+    font-weight: 700;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(174, 211, 241);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#render {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.carta {
+    flex-grow: 1;
+    padding: 10px 25px;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 4px 13px -5.5px #506c86;
+    -moz-box-shadow: 3px 4px 13px -5.5px #506c86;
+    box-shadow: 3px 4px 13px -5.5px #506c86;
+}
+li{
+    list-style: none
+}
+input{
+    border-style: none;
+    border-radius: 10px;
+    padding: 8px;
+    border: 1px solid rgb(160, 160, 160);
+    margin-bottom: 20px;
+}
+button{
+    background-color: rgb(104, 160, 206);
+    border-style: none;
+    padding: 8px;
+    border-radius: 10px;
+    color: #fff;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(29, 118, 190);
+}
+img{
+    filter: drop-shadow(10px 4px 5px rgb(29, 118, 190));
+    min-height: 150px;
+}
+.border{
+    border-radius: 32% 68% 66% 34% / 54% 63% 37% 46%;
+}
