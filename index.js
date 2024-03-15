@@ -94,7 +94,7 @@ async function obtenerInfo(e){
         <li>Height: ${propiedadesPokemon.height}</li>
         <li>Weight: ${propiedadesPokemon.weight}</li>
         <li>HP: ${propiedadesPokemon.stats[0].base_stat}</li>
-        <li>Effort: ${propiedadesPokemon.stats[1].base_stat}</li>
+        <li>Attack: ${propiedadesPokemon.stats[1].base_stat}</li>
         <li>Defense: ${propiedadesPokemon.stats[2].base_stat}</li>
         
     </ul>
