@@ -44,7 +44,7 @@ async function obtenerListado(pokemonBuscar){
     }
     if(pokemonBuscar){
         const finded = pokemonList.find(function(word) {
-            return pokemonBuscar === word
+            return pokemonBuscar == word
         });
         if (finded) {
             obtenerPokemon(finded)
@@ -58,7 +58,7 @@ function mensajeNoEncontrado(){
     Swal.fire({
     icon: "error",
     title: "Oops...",
-    text: "Something went wrong!"
+    text: "it seems this pokemon doesn't exist!"
     });
     obtenerListado()
 }
@@ -71,7 +71,7 @@ async function buscarPokemon(e){
     const render = document.querySelector('#render');
     render.innerHTML = ``;
     let buscar = document.querySelector('#buscar');
-    obtenerListado(buscar.value);
+    obtenerListado(buscar.value.toLowerCase());
 }
 
 async function obtenerInfo(e){
